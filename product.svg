@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350">
+  <rect width="500" height="350" rx="24" fill="white"/>
+  <rect x="115" y="70" width="270" height="170" rx="24" fill="teal"/>
+  <rect x="150" y="105" width="200" height="100" rx="18" fill="white"/>
+  <circle cx="170" cy="270" r="18" fill="chocolate"/>
+  <circle cx="330" cy="270" r="18" fill="chocolate"/>
+  <text x="250" y="325" text-anchor="middle" font-family="Verdana" font-size="28" fill="darkslategray">Smart Product</text>
+</svg>

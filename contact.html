@@ -1,0 +1,302 @@
+<html>
+<head>
+  <title>Campus Craft Hub | Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <main class="container py-4">
+    <section class="glass-card p-4 mb-4">
+      <h2 class="section-title">Assignment Navigation</h2>
+      <div class="flex-demo mt-3">
+        <a class="flex-box" href="index.html#task-1-20"><h3>Tasks 1-20</h3></a>
+        <a class="flex-box" href="about.html#task-21-35"><h3>Tasks 21-35</h3></a>
+        <a class="flex-box" href="#task-36-50"><h3>Tasks 36-50</h3></a>
+      </div>
+    </section>
+    <section class="glass-card p-4 mb-4" id="task-36-50">
+      <div class="task-chip">Tasks 36-50</div>
+      <div class="p-3 rounded-4 text-white mb-4" style="background:linear-gradient(90deg,teal,lightseagreen);">
+        <h1 class="mb-0">Contact Us</h1>
+      </div>
+      <div class="contact-info-item">
+        <h2 class="h5">Address</h2>
+        <p class="mb-0">12 Innovation Avenue, Knowledge Park, Chennai, India</p>
+      </div>
+      <div class="contact-info-item">
+        <h2 class="h5">Phone</h2>
+        <p class="mb-0">+91 9XXXX XXXXX</p>
+      </div>
+      <div class="contact-info-item">
+        <h2 class="h5">Email</h2>
+        <p class="mb-0">hello@campuscrafthub.example</p>
+      </div>
+      <div class="map-card mt-4">
+        <img src="assets/images/map.svg" alt="Location map">
+      </div>
+    </section>
+
+    <section class="glass-card p-4 mb-4" id="responsive-form">
+      <div class="task-chip">Tasks 10 and 23</div>
+      <h2 class="section-title">Responsive Contact Form</h2>
+      <div class="form-shell mt-3">
+        <div class="form-head"><h3 class="h4 mb-0">Send Us a Message</h3></div>
+        <div class="form-body">
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label">Name</label>
+              <input class="form-control modern-input" type="text" placeholder="Your name">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Email</label>
+              <input class="form-control modern-input" type="email" placeholder="Your email">
+            </div>
+            <div class="col-12">
+              <label class="form-label">Subject</label>
+              <input class="form-control modern-input" type="text" placeholder="Message subject">
+            </div>
+            <div class="col-12">
+              <label class="form-label">Message</label>
+              <textarea class="form-control modern-input" rows="5" placeholder="Type your message"></textarea>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-brand" type="button">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="glass-card p-4 mb-4" id="server-guide">
+      <div class="task-chip">Task 2</div>
+      <h2 class="section-title">Visit And Launch Guide</h2>
+      <p>This 3-page website uses <code>home.html</code>, <code>about.html</code>, and <code>contact.html</code>, with shared assets in <code>assets/images</code>, <code>assets/css</code>, and <code>assets/js</code>.</p>
+      <p>To open the site from a local web server, run:</p>
+      <pre class="p-3 rounded-4" style="background:darkslategray;color:white;"><code>python3 -m http.server 8000</code></pre>
+      <p>Then open <code>http://localhost:8000/home.html</code> in your browser.</p>
+      <p class="small-note mb-0">The dropdown menu and internal section links will work smoothly across the three main pages.</p>
+    </section>
+
+    <section class="glass-card p-4 mb-4">
+      <div class="task-chip">Tasks 36-41</div>
+      <h2 class="section-title">Validation, Focus, Tooltip, and Live Input Labs</h2>
+      <div class="row g-4">
+        <div class="col-12">
+          <div class="panel-card p-4">
+            <h3 class="h5">Task 36: Online Exam Registration</h3>
+            <form id="examForm" class="row g-3 mt-1">
+              <div class="col-md-6"><input id="examName" class="form-control" type="text" placeholder="Student Name"></div>
+              <div class="col-md-6"><input id="examEmail" class="form-control" type="email" placeholder="Email"></div>
+              <div class="col-12">
+                <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="examGender" id="examMale"><label class="form-check-label" for="examMale">Male</label></div>
+                <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="examGender" id="examFemale"><label class="form-check-label" for="examFemale">Female</label></div>
+              </div>
+              <div class="col-12">
+                <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="subjects" id="subHtml"><label class="form-check-label" for="subHtml">HTML</label></div>
+                <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="subjects" id="subCss"><label class="form-check-label" for="subCss">CSS</label></div>
+                <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="subjects" id="subJs"><label class="form-check-label" for="subJs">JavaScript</label></div>
+              </div>
+              <div class="col-12 form-check">
+                <input id="examDeclaration" class="form-check-input" type="checkbox">
+                <label class="form-check-label" for="examDeclaration">I confirm all information is correct.</label>
+              </div>
+              <div class="col-12"><button class="btn btn-brand" type="submit">Validate Exam Form</button></div>
+            </form>
+            <div id="examErrors" class="field-error mt-3"></div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="panel-card p-4">
+            <h3 class="h5">Task 37: Hotel Booking Form</h3>
+            <form id="hotelForm" class="row g-3 mt-1">
+              <div class="col-md-6"><input id="guestName" class="form-control" type="text" placeholder="Guest Name"></div>
+              <div class="col-md-6"><input id="guestContact" class="form-control" type="text" placeholder="Contact Number"></div>
+              <div class="col-12">
+                <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="roomType" id="deluxeRoom"><label class="form-check-label" for="deluxeRoom">Deluxe</label></div>
+                <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="roomType" id="suiteRoom"><label class="form-check-label" for="suiteRoom">Suite</label></div>
+              </div>
+              <div class="col-12">
+                <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="services" id="breakfast"><label class="form-check-label" for="breakfast">Breakfast</label></div>
+                <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="services" id="pickup"><label class="form-check-label" for="pickup">Airport Pickup</label></div>
+                <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" name="services" id="wifi"><label class="form-check-label" for="wifi">Wi-Fi</label></div>
+              </div>
+              <div class="col-12 form-check">
+                <input id="hotelTerms" class="form-check-input" type="checkbox">
+                <label class="form-check-label" for="hotelTerms">I accept the booking terms.</label>
+              </div>
+              <div class="col-12"><button class="btn btn-brand" type="submit">Validate Booking</button></div>
+            </form>
+            <div id="hotelErrors" class="field-error mt-3"></div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="panel-card p-4 h-100">
+            <h3 class="h5">Task 38: Product Cards Tooltip</h3>
+            <div class="wrap">
+              <div class="card panel-card p-3 me-2 d-inline-block">
+                <h4>Product A</h4>
+                <p>$29</p>
+                <div class="tip">High quality product A details.</div>
+              </div>
+              <div class="card panel-card p-3 me-2 d-inline-block">
+                <h4>Product B</h4>
+                <p>$39</p>
+                <div class="tip">Premium product B information.</div>
+              </div>
+              <div class="card panel-card p-3 d-inline-block">
+                <h4>Product C</h4>
+                <p>$49</p>
+                <div class="tip">Exclusive product C description.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="panel-card p-4 h-100">
+            <h3 class="h5">Task 39: Auto-focus Password</h3>
+            <input id="autoUsername" class="form-control mb-2 focus-field" type="text" placeholder="Username">
+            <input id="autoPassword" class="form-control focus-field" type="password" placeholder="Password">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="panel-card p-4 h-100">
+            <h3 class="h5">Task 40: Product Tooltip</h3>
+            <img id="tooltipProduct" src="assets/images/product.svg" alt="Product with tooltip" class="placeholder-image">
+            <div id="productTooltip" class="tooltip-card">Price: Rs. 7999<br>Description: Smart student kit with a compact device bundle.</div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="panel-card p-4 h-100">
+            <h3 class="h5">Task 41: Live Validation</h3>
+            <form id="liveValidationForm">
+              <label class="form-label">Email <span id="emailIcon" class="email-icon invalid-icon">✗</span></label>
+              <input id="liveEmail" class="form-control mb-3" type="email" placeholder="student@example.com">
+              <label class="form-label">Password <span id="passwordIcon" class="password-icon invalid-icon">✗</span></label>
+              <input id="livePassword" class="form-control" type="password" placeholder="8+ chars with letters and numbers">
+              <div id="passwordHelp" class="field-error mt-1">Use 8+ characters with letters and numbers.</div>
+              <button class="btn btn-brand mt-3" type="submit">Check</button>
+            </form>
+            <div id="liveValidationResult" class="field-error mt-3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="glass-card p-4 mb-4">
+      <div class="task-chip">Tasks 42-50</div>
+      <h2 class="section-title">Z-Index and jQuery Interaction Gallery</h2>
+      <div class="d-flex flex-wrap gap-3 mb-4">
+        <button class="btn btn-brand" data-open-modal="loginModal">Open Login Modal</button>
+        <button class="btn btn-brand" data-open-modal="signupModal">Open Signup Modal</button>
+        <button class="btn btn-brand" data-open-modal="confirmModal">Open Confirmation Modal</button>
+      </div>
+      <div class="overlay-card mb-4">
+        <img src="assets/images/campus.svg" alt="Campus with overlay caption" class="placeholder-image">
+        <div class="caption-overlay">Task 43: caption overlay above the image using z-index.</div>
+      </div>
+      <div class="z-demo-area mb-4">
+        <div class="z-stack z-one">Task 44: Content block z-index 1</div>
+        <div class="z-stack z-two">Task 44: Content block z-index 2</div>
+        <div class="z-stack z-three">Task 44: Content block z-index 3</div>
+        <div class="z-stack z-fifty">Task 44: Content block z-index 50</div>
+      </div>
+      <div class="overlap-gallery mb-4">
+        <img src="assets/images/campus.svg" alt="Gallery image 1" class="img-one">
+        <img src="assets/images/product.svg" alt="Gallery image 2" class="img-two">
+        <img src="assets/images/profile.svg" alt="Gallery image 3" class="img-three">
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="panel-card p-3 h-100">
+            <h3 class="h5">Task 46: Toggle Paragraph</h3>
+            <button id="toggleParagraphBtn" class="btn btn-brand mb-3">Toggle Paragraph</button>
+            <p id="toggleParagraph">This paragraph is shown and hidden using jQuery toggle().</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="panel-card p-3 h-100">
+            <h3 class="h5">Task 47: Thumbnail Gallery</h3>
+            <img id="mainGalleryImage" src="assets/images/campus.svg" alt="Main gallery view" class="placeholder-image mb-3">
+            <div class="d-flex gap-2">
+              <img src="assets/images/campus.svg" alt="Thumb 1" class="gallery-thumb" width="90" height="70">
+              <img src="assets/images/product.svg" alt="Thumb 2" class="gallery-thumb" width="90" height="70">
+              <img src="assets/images/profile.svg" alt="Thumb 3" class="gallery-thumb" width="90" height="70">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="panel-card p-3 h-100">
+            <h3 class="h5">Task 48: Highlight Paragraphs</h3>
+            <p class="jq-paragraph">Paragraph one receives the highlight class on page load.</p>
+            <p class="jq-paragraph">Paragraph two toggles highlight on click.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="panel-card p-3 h-100">
+            <h3 class="h5">Task 49: Dynamic Todo List</h3>
+            <div class="d-flex gap-2 mb-3">
+              <button id="addTodoBtn" class="btn btn-brand">Add Task</button>
+              <button id="updateTodoBtn" class="btn btn-outline-secondary">Update First</button>
+            </div>
+            <ul id="todoList" class="todo-list">
+              <li>Research</li>
+              <li>Design</li>
+              <li>Deploy</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="panel-card p-3 h-100">
+            <h3 class="h5">Task 50: Fade Image On Hover</h3>
+            <div class="fade-hover-card">
+              <h4>Beautiful Place</h4>
+              <p>Move your mouse over this card to fade the image.</p>
+              <img src="assets/images/product.svg" alt="Fade on hover image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="loginModal-backdrop" class="modal-bg" data-modal-target="loginModal"></div>
+  <div id="loginModal" class="modal-x">
+    <div class="modal-box">
+      <h3>Login Modal</h3>
+      <p>Task 42: base modal opens at z-index 1000.</p>
+      <button class="btn btn-outline-secondary" data-close-modal="loginModal">Close</button>
+    </div>
+  </div>
+
+  <div id="signupModal-backdrop" class="modal-bg" data-modal-target="signupModal"></div>
+  <div id="signupModal" class="modal-x">
+    <div class="modal-box">
+      <h3>Signup Modal</h3>
+      <p>Task 42: opening another modal increases the stack level.</p>
+      <button class="btn btn-outline-secondary" data-close-modal="signupModal">Close</button>
+    </div>
+  </div>
+
+  <div id="confirmModal-backdrop" class="modal-bg" data-modal-target="confirmModal"></div>
+  <div id="confirmModal" class="modal-x">
+    <div class="modal-box">
+      <h3>Confirmation Modal</h3>
+      <p>Task 42: click outside to close using backdrop behavior.</p>
+      <button class="btn btn-outline-secondary" data-close-modal="confirmModal">Close</button>
+    </div>
+  </div>
+
+  <footer class="footer-band mt-4">
+    <div class="container py-4">
+      <p class="mb-0">Contact footer: address, phone, email, responsive form, and local server setup instructions.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

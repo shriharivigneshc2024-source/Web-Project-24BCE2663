@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420">
+  <rect width="700" height="420" fill="aliceblue"/>
+  <path d="M60 70h160v280H60z" fill="honeydew"/>
+  <path d="M260 40h160v320H260z" fill="seashell"/>
+  <path d="M460 80h180v260H460z" fill="lightcyan"/>
+  <path d="M0 180h700" stroke="teal" stroke-width="20"/>
+  <path d="M330 0v420" stroke="chocolate" stroke-width="18"/>
+  <circle cx="330" cy="180" r="34" fill="firebrick"/>
+  <circle cx="330" cy="180" r="14" fill="white"/>
+  <text x="350" y="245" font-family="Verdana" font-size="28" fill="darkslategray">Location Map</text>
+</svg>

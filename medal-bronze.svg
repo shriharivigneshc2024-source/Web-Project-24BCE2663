@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <circle cx="60" cy="70" r="34" fill="peru"/>
+  <polygon points="40,8 56,8 60,42 44,42" fill="deepskyblue"/>
+  <polygon points="64,8 80,8 76,42 60,42" fill="hotpink"/>
+  <text x="60" y="81" text-anchor="middle" font-family="Verdana" font-size="28" fill="darkslategray">3</text>
+</svg>
